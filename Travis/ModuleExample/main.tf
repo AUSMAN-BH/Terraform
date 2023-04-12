@@ -1,0 +1,30 @@
+
+# resource "azurerm_resource_group" "resourcegroup" {
+#   name     = var.rsgname
+#   location = var.location
+#   tags = local.tags
+# }
+
+# resource "azurerm_storage_account" "example" {
+#   name                     = var.stgactname
+#   resource_group_name      = azurerm_resource_group.resourcegroup.name
+#   location                 = azurerm_resource_group.resourcegroup.location
+#   account_tier             = "Standard"
+#   account_replication_type = "GRS"
+
+#   tags = local.tags
+# }
+
+
+module "ResourceGroup" {
+  source = "./ResourceGroup"
+  base_name = "TerraformExample01"
+  location = "West US"
+}
+
+# module "StorageAccount" {
+#   source = "./StorageAccount"
+#   base_name = "TerraformExample01"
+#   resource_group_name = module.ResourceGroup.rg_name_out
+#   location = "West US"
+# }
