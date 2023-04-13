@@ -69,6 +69,7 @@ variable "local_admin_password" {
   sensitive   = true
 }
 
+#DOMAIN NAME
 variable "domain_name" {
   type        = string
   default     = "usarif.onmicrosoft.com"
