@@ -1,4 +1,4 @@
-# Resource group name is output when execution plan is applied.
+# #Resource group name is output when execution plan is applied.
 resource "azurerm_resource_group" "sh" {
   name     = var.rg_name
   location = var.resource_group_location
