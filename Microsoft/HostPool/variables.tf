@@ -83,7 +83,7 @@ variable "domain_user_upn" {
 
 variable "domain_password" {
   type        = string
-  default     = "ChangeMe123!"
+  default     = "ChangeMe456!"
   description = "Password of the user to authenticate with the domain"
   sensitive   = true
 }
