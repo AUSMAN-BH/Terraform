@@ -3,7 +3,7 @@ terraform {
   cloud {
     organization = "USARIF"
     workspaces {
-      name = "Terraform-USARIF"
+      name = "Terraform-AVD"
     }
   }
 }
