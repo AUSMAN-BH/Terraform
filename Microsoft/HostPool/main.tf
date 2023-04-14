@@ -32,7 +32,7 @@ resource "azurerm_virtual_desktop_host_pool_registration_info" "registrationinfo
   expiration_date = var.rfc3339
 }
 
-# Create AVD DAG
+## Create AVD DAG
 resource "azurerm_virtual_desktop_application_group" "dag" {
   resource_group_name = azurerm_resource_group.sh.name
   host_pool_id        = azurerm_virtual_desktop_host_pool.hostpool.id
