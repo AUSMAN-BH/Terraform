@@ -13,10 +13,10 @@ terraform {
 provider "azurerm" {
   features {}
 
-cloud {
-    organization = "USARIF"
-    workspaces {
-      name = "usarif_rg"
-    }
-  }  
+# cloud {
+#     organization = "USARIF"
+#     workspaces {
+#       name = "usarif_rg"
+#     }
+#   }  
 }
