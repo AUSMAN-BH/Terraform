@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "sh" {
   location = var.resource_group_location
 }
 
-# Create AVD workspace
+# #Create AVD workspace
 resource "azurerm_virtual_desktop_workspace" "workspace" {
   name                = var.workspace
   resource_group_name = azurerm_resource_group.sh.name
