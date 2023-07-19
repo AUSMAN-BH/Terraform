@@ -4,6 +4,6 @@ data "azuread_user" "aad_user" {
   user_principal_name = format("%s", each.key)
 }
 
-data "azurerm_role_definition" "role" { # access an existing built-in role
-  name = "avd_testgroup"
-}
+# data "azurerm_role_definition" "role" { # access an existing built-in role
+#   name = "avd_testgroup"
+# }
