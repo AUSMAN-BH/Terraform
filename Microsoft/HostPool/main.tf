@@ -203,14 +203,14 @@ resource "azurerm_virtual_machine_extension" "vmext_dsc" {
         "HostPoolName":"${azurerm_virtual_desktop_host_pool.hostpool.name}"
       }
     }
-# SETTINGS
+SETTINGS
 
-#   protected_settings = <<PROTECTED_SETTINGS
-#   {
-#     "properties": {
-#          "registrationInfoToken": "${local.registration_token}"
-#     }
-#   }
+  protected_settings = <<PROTECTED_SETTINGS
+  {
+    "properties": {
+         "registrationInfoToken": "${local.registration_token}"
+    }
+  }
  
 PROTECTED_SETTINGS
 
