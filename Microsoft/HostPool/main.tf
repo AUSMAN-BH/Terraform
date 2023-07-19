@@ -13,7 +13,7 @@ resource "azurerm_virtual_desktop_workspace" "workspace" {
   description         = "${var.prefix} Workspace"
 }
 
-# Create AVD host pool
+# #Create AVD host pool
 resource "azurerm_virtual_desktop_host_pool" "hostpool" {
   resource_group_name      = azurerm_resource_group.sh.name
   location                 = azurerm_resource_group.sh.location
